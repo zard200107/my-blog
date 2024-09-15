@@ -1,16 +1,15 @@
-import Footer from "./Footer";
+import React, { FC } from "react";
 import Navbar from "./Navbar";
 import Main from "./Main";
+import Footer from "./Footer";
 
-function AppLayout() {
+const AppLayout: React.FC = () => {
   return (
     <div>
       <Navbar />
       <Main />
-
       <Footer />
     </div>
   );
-}
-
+};
 export default AppLayout;

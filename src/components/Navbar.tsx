@@ -1,6 +1,6 @@
 /* eslint-disable  */
 
-import { useState } from "react";
+import React, { useState, FC } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 // NavLink 用于页面间的导航，而 react-scroll 的 Link 用于页面内的滚动导航。
 
-function Navbar() {
+const Navbar: React.FC = () => {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
@@ -107,6 +107,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

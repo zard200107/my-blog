@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
+import React, { FC } from "react";
 
-function Main() {
+const Main: React.FC = () => {
   return (
     <div>
       <Outlet />
     </div>
   );
-}
+};
 
 export default Main;
