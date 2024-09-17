@@ -2,14 +2,18 @@ import React, { FC } from "react";
 import Navbar from "./Navbar";
 import Main from "./Main";
 import Footer from "./Footer";
+import Hero from "./Hero";
+import Skills from "./Skills";
 
 const AppLayout: React.FC = () => {
   return (
-    <div>
+    <>
       <Navbar />
+      <Hero />
+      <Skills />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 };
 export default AppLayout;
