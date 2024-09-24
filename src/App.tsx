@@ -1,8 +1,9 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import AppLayout from "./components/AppLayout";
+import React from "react";
 
-function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -22,5 +23,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
+
 export default App;

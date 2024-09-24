@@ -7,10 +7,12 @@ import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import Loader from "./Loader";
 
 const AppLayout: React.FC = () => {
   return (
     <>
+      <Loader />
       <Navbar />
       <Hero />
       <Skills />
