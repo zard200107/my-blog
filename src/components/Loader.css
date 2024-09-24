@@ -1,21 +1,35 @@
-.boxShadow-custom {
+.loader-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.loader-container {
+  position: relative;
+  width: 100%;
+}
+
+.loader-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 200px);
+  animation: animateSurface 1.5s ease-in-out infinite;
+}
+
+.loader-cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #03e9f4;
   box-shadow: 0 0 5px rgba(3, 233, 244, 1), 0 0 25px rgba(3, 233, 244, 1),
     0 0 50px rgba(3, 233, 244, 1), 0 0 100px rgba(3, 233, 244, 1),
     0 0 200px rgba(3, 233, 244, 0.5), 0 0 300px rgba(3, 233, 244, 0.5);
   transform-origin: bottom right;
-  position: relative;
-}
-
-.webkit-box-reflect {
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
-}
-
-.animation-cube {
   animation: animate 1.5s ease-in-out infinite;
-}
-
-.animate-box {
-  animation: animateSurface 1.5s ease-in-out infinite;
 }
 
 @keyframes animate {
