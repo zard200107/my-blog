@@ -8,15 +8,16 @@ import Portfolio from "./Portfolio";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Loader from "./Loader";
+import Blogs from "./Blogs";
 
 const AppLayout: React.FC = () => {
   return (
     <>
-      <Loader />
       <Navbar />
       <Hero />
       <Skills />
       <Portfolio />
+      <Blogs />
       <Experience />
       <Contact />
       <Main />
